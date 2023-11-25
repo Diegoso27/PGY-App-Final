@@ -1,0 +1,12 @@
+<ion-app>
+  <app-menu></app-menu>
+  <ion-router-outlet></ion-router-outlet>
+
+  <ion-footer class="ion-text-center">
+    <ion-card [color]="estado ? 'dark' : 'danger'">
+    <p><strong>Estado de conexion:</strong> {{estado ? 'En Linea' : 'Desconectado'}}</p>
+    </ion-card>
+    <ion-label> By Coipo & Oso </ion-label>
+    <ion-label>All Rights Reserved</ion-label>
+  </ion-footer>
+</ion-app>

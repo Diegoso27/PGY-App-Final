@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro de asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list>
+      <ion-item class="item1">
+        <ion-input label="Nombre" placeholder="ingrese nombre"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Fecha" type="Fecha" placeholder="26/08/2023"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input label="Asignatura" type="password" placeholder="ingrese nombre asignatura"></ion-input>
+      </ion-item>
+      
+      <ion-button class="btnConfirmar" [routerLink]="['/asist-register']">
+        Confirmar
+      </ion-button>
+      <ion-button class="btnCancelar" [routerLink]="['/bienvenido']">
+        Cancelar 
+      </ion-button>
+    </ion-list>
+  </ion-list>  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-button slot="end">
+      <ion-label>DuocUC</ion-label>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

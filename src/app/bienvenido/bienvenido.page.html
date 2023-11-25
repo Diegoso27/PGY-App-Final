@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title class="ion-text-center">Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <ion-item class="itemBox" >
+    <h1>  Bienvenido {{nombreUser}}</h1>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{usuarioCorreo}}</ion-label>
+  </ion-item>
+   <ion-row>
+    <ion-col>
+      <ion-button (click)="scan()" expand="block" shape="round">
+        <ion-icon slot="start" name="qr-code-outline"></ion-icon>
+        Escanear   QR.
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button color="success" [routerLink]="['/asist-register']" expand="block" shape="round">
+        <ion-icon slot="start" name="calendar-outline"></ion-icon>
+        Ver Asistencia 
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button (click)="logout()" color="danger" expand="block" shape="round">
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        Cerrar sesión 
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  
+  <ion-card color="warning" class="ion-text-center ion-padding" *ngIf="jokeSingle">
+    <h3>JOKE Api</h3>
+    <h4> {{jokeSingle}}  </h4>
+  </ion-card>
+  <ion-card color="warning" class="ion-text-center" *ngIf="jokeDelivery">
+    <h3>JOKE Api</h3>
+    <h4> {{jokeSetup}}  </h4>
+    <h4> {{jokeDelivery}} </h4>
+  </ion-card>
+
+</ion-content>

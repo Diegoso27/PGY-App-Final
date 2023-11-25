@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bienvenido a tu Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img class="imgPerfil" alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+
+  <ion-item>
+    <ion-label style="text-align: center;">
+      Claudio Cornejo
+    </ion-label>
+  </ion-item>
+
+  <ion-button [routerLink]="['/delete-account']" class="btnUm">
+    Eliminar Cuenta
+  </ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-button slot="end">
+      <ion-label>DuocUC</ion-label>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

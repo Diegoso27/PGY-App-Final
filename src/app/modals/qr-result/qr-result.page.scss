@@ -1,0 +1,10 @@
+@-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+// -webkit-animation:rotate-center 1s ease-in-out both;animation:rotate-center 1s ease-in-out both;
+img {
+    -webkit-animation:rotate-center 1s ease-in-out both;animation:rotate-center 3s ease-in-out both;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+
+}

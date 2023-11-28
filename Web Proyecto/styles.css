@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: antiquewhite;
+}
+
+h1 {
+    margin-top: 5px;
+}
+
+.imagen-qr {
+    margin-top: 5%;
+    height: 500px;
+}
+
+.container {
+    margin-top: 2%;
+    text-align: center;
+    align-items: center;
+
+    font-size: 20px
+
+}
